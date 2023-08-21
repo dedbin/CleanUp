@@ -3,6 +3,7 @@ import shutil
 import zipfile
 import re
 
+
 def del_dup_main():
     def remove_duplicates(directory):
         for root, dirs, files in os.walk(directory):
@@ -78,6 +79,8 @@ def del_temp_main():
                     print(f"удален {filepath}")
                 except Exception as e:
                     print(f"ошибка при удалении {filepath}: {e}")
+
+
 def down_main():
     downloads_dir = os.path.expanduser("~/Downloads")
 
@@ -125,6 +128,7 @@ def down_main():
                     shutil.move(filepath, os.path.join(dest_folder, filename))
                     print(f"перемещен {filename} в {dest_folder}")
                     break
+
 
 del_temp_main()
 del_dup_main()
