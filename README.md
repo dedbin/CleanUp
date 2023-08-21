@@ -1,30 +1,49 @@
-# Project CleanUp
+# CleanUp
 
-## Description
-Project CleanUp is a set of Python scripts designed to organize and clean up files and directories on your computer. It includes three scripts:
+CleanUp - это скрипт на языке Python, который помогает организовать ваши файлы, удалить дубликаты и временные файлы в указанных директориях. Он предоставляет удобный способ поддерживать вашу файловую систему аккуратной и без лишнего балласта.
 
-1. `add_to_folds.py`: This script organizes files in the Downloads directory into specific folders based on their file types. It creates folders for different file types such as Images, Code, Documents, Audio, Video, Photoshop files, and Applications. Files are moved to their respective folders based on their file extensions.
+## Возможности
 
-2. `del_temp.py`: This script deletes temporary files and directories from specified locations on your computer. It removes files with extensions like .log, .cache, .tmp, .dmg, and .pkg from directories such as /private/var/folders, ~/Library/C
-aches, ~/Library/Logs, ~/Downloads, and ~/Desktop. Additionally, it deletes screenshot files starting with "Screenshot" from the ~/OneDrive/Desktop directory.
+- Организация файлов в папки на основе их типов и расширений.
+- Удаление дубликатов файлов, оставляя только последнюю версию согласно шаблону номеров в имени файла.
+- Удаление временных файлов и файлов с определенными расширениями из заданных временных директорий.
 
-3. `del_duplicates.py`: This script removes duplicate files from a specified directory. It identifies duplicate files by comparing their names and numbers in parentheses. The script keeps the latest version of the file and removes the rest. It 
-also renames the latest file to remove the number in parentheses.
+## Установка
 
-## Usage
-1. Run `add_to_folds.py` to organize files in the Downloads directory. It will create folders for different file types and move files to their respective folders based on their extensions.
-                                                                                                                                                                                            
-2. Run `del_temp.py` to delete temporary files and directories from specified locations on your computer. It will remove files with specific extensions and screenshot files from the specified directories.
-                                                                                                                                                                                                            
-3. Run `del_duplicates.py` to remove duplicate files from a specified directory. It will keep the latest version of each file and remove the rest. It will also rename the latest file to remove the number in parentheses.
-                                                                                                                                                                                                                           
-## Requirements                                                                                                                                                                                                            
-- Python 3.x
-- Operating System:  Windows (scripts were tested and developed on windows)
+1. Склонируйте репозиторий CleanUp:
 
-## Note
-- Please use these scripts with caution as they perform file operations that cannot be undone. Make sure to backup important files before running these scripts.
-- Modify the file paths and directories in the scripts according to your specific needs before running them.
-- These scripts are provided as-is and the developer is not responsible for any data loss or damage caused by their usage.
+   
+```
+git clone https://github.com/dedbin/CleanUp.git
+```
 
+2. Перейдите в директорию проекта:
 
+   
+```
+cd CleanUp
+```
+
+3. Убедитесь, что у вас установлена версия Python 3.x.
+
+   
+
+## Использование
+
+Для запуска скрипта CleanUp выполните следующую команду:
+
+```
+python exe_ver.py
+```
+Или просто запустите ```exe_ver.exe```
+Скрипт организует ваши файлы в папки на основе их типов и расширений. Будут удалены дубликаты файлов, а также временные файлы.
+
+Обратите внимание, что вы можете изменить словарь file_types в файле add_to_folds.py, чтобы добавить или удалить конкретные типы файлов и расширения в соответствии с вашими потребностями.
+
+## Внесение вклада
+
+Ваши вклады приветствуются! Если у вас есть предложения, сообщения об ошибках или запросы на доработку функционала, пожалуйста, создайте issue на [репозитории CleanUp на GitHub](https://github.com/dedbin/CleanUp/issues). Вы также можете форкнуть репозиторий и отправить pull request.
+## Примечание
+- Пожалуйста, используйте эти скрипты с осторожностью, поскольку они выполняют файловые операции, которые невозможно отменить. Перед запуском этих скриптов обязательно создайте резервную копию важных файлов.
+- Измените пути к файлам и каталогам в скриптах в соответствии с вашими конкретными потребностями перед их запуском.
+- Эти скрипты предоставляются как есть, и разработчик не несет ответственности за любую потерю данных или ущерб, вызванный их использованием.
