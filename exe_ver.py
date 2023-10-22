@@ -85,12 +85,11 @@ def down_main():
     downloads_dir = os.path.expanduser("~/Downloads")
 
     file_types = {
-        "Image": [".jpg", ".jpeg", ".png", ".gif", ".tiff", ".bmp", ".eps"],
-        "Code": [".ipynb", ".py", ".js", ".html", ".css", ".php", ".cpp", ".h", ".java", ".go", ".csv"],
+        "Image": [".jpg", ".jpeg", ".png", ".gif", ".tiff", ".bmp", ".eps", ".ico"],
+        "Code": [".ipynb", ".py", ".js", ".html", ".css", ".php", ".cpp", ".h", ".java", ".go", ".csv", ".json", ".sql", ".ts", ".tsx", ".jsx"],
         "Document": [".pdf", ".doc", ".docx", ".txt", ".rtf", ".xls", ".xlsx", ".ppt", ".pptx", ".epub"],
         "Audio": [".mp3", ".wav", ".aac", ".ogg", ".oga"],
-        "Video": [".mp4", ".avi", ".mov", ".flv", ".wmv", ".mpeg"],
-        "Photoshop": [".psd"],
+        "Video": [".mp4", ".avi", ".mov", ".flv", ".wmv", ".mpeg", ".mkv"],
         "Applications": [".exe", ".dmg", ".pkg"],
     }
 
