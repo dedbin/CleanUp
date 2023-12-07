@@ -90,7 +90,10 @@ def down_main():
         "Document": [".pdf", ".doc", ".docx", ".txt", ".rtf", ".xls", ".xlsx", ".ppt", ".pptx", ".epub"],
         "Audio": [".mp3", ".wav", ".aac", ".ogg", ".oga"],
         "Video": [".mp4", ".avi", ".mov", ".flv", ".wmv", ".mpeg", ".mkv"],
-        "Applications": [".exe", ".dmg", ".pkg"],
+        "Applications": [".exe", ".dmg", ".pkg", ".deb", ".dll", ".msi"],
+        'Torrent': [".torrent", ".srt"],
+        "OS": [".iso", ".dmg", ".pkg"],
+        "Guitar": [".gp5", ".gp4", ".gp3", ".gp2", ".gp1", "gpx"],
     }
 
     for folder_name in file_types.keys():
